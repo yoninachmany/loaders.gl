@@ -11,13 +11,14 @@ export {default as ImageWriter} from './image-writer';
 export {getBinaryImageMetadata} from './lib/category-api/binary-image-api';
 
 // Parsed Image API
-export {isImageTypeSupported, getDefaultImageType} from './lib/category-api/image-type';
+export {isImageTypeSupported} from './lib/category-api/image-type';
 
 export {
   isImage,
   getImageType,
   getImageSize,
-  getImageData
+  getImageData,
+  getImageDataAsync
 } from './lib/category-api/parsed-image-api';
 
 // Texture Loading API
@@ -29,10 +30,6 @@ export {loadImageCube} from './lib/texture-api/load-image-cube';
 // TODO - Remove in V3
 
 export {default as HTMLImageLoader} from './image-loader';
-
-import {getDefaultImageType} from './lib/category-api/image-type';
-
-export function getSupportedImageType(imageType?);
 
 export {
   isBinaryImage,

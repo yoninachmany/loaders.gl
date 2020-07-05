@@ -29,10 +29,10 @@
     "README.md"
   ],
   "scripts": {
-    "pre-build": "npm run build-bundle && npm run build-bundle -- --env.dev",
-    "build-bundle": "webpack  --display=minimal --config ../../scripts/bundle.config.js",
-    "build-worker": "webpack --entry ./src/image-loader.worker.js --output ./dist/image-loader.worker.js --config ../../scripts/worker-webpack-config.js"
-  },
+  "pre-build": "npm run build-bundle && npm run copy-worker && npm run build-bundle -- --env.dev",
+  "build-bundle": "webpack --display=minimal --config ../../scripts/bundle.config.js",
+  "copy-worker": "cp ./src/workers/get-image-data.worker.js ./dist/get-image-data.worker.js"
+},
   "dependencies": {
     "@loaders.gl/loader-utils": "2.3.0-alpha.6"
   }
