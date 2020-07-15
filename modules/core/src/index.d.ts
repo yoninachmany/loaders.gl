@@ -1,3 +1,7 @@
+// TYPES
+export {LoaderObject, WriterObject, LoaderContext} from '@loaders.gl/loader-utils';
+export {LoadOptions} from './types';
+
 // FILE READING AND WRITING
 export {fetchFile} from './lib/fetch/fetch-file';
 
