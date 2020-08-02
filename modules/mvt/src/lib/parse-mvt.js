@@ -1,9 +1,9 @@
 // import {VectorTile} from '@mapbox/vector-tile';
-import VectorTile from './mapbox-vector-tile/vector-tile';
+import VectorTile from './mapbox-vector-tile-js/vector-tile';
 
 import {geojsonToBinary} from '@loaders.gl/gis';
 import Protobuf from 'pbf';
-import {transformCoordinates, transformToLocalCoordinates} from './transform-to-local-range';
+import {transformCoordinates, transformToLocalCoordinates} from './utils/transform-to-local-range';
 
 /*
   * Parse MVT arrayBuffer and return GeoJSON.

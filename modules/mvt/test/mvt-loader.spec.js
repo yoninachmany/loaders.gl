@@ -3,19 +3,19 @@ import {MVTLoader} from '@loaders.gl/mvt';
 import {setLoaderOptions, fetchFile, parse, parseSync} from '@loaders.gl/core';
 import {geojsonToBinary} from '@loaders.gl/gis';
 
-const MVT_POINTS_DATA_URL = '@loaders.gl/mvt/test/data/points_4-2-6.mvt';
-const MVT_LINES_DATA_URL = '@loaders.gl/mvt/test/data/lines_2-2-1.mvt';
-const MVT_POLYGONS_DATA_URL = '@loaders.gl/mvt/test/data/polygons_10-133-325.mvt';
+const MVT_POINTS_DATA_URL = '@loaders.gl/mvt/test/data/mvt-decode-inputs/points_4-2-6.mvt';
+const MVT_LINES_DATA_URL = '@loaders.gl/mvt/test/data/mvt-decode-inputs/lines_2-2-1.mvt';
+const MVT_POLYGONS_DATA_URL = '@loaders.gl/mvt/test/data/mvt-decode-inputs/polygons_10-133-325.mvt';
 const MVT_MULTIPLE_LAYERS_DATA_URL =
-  '@loaders.gl/mvt/test/data/lines_10-501-386_multiplelayers.mvt';
+  '@loaders.gl/mvt/test/data/mvt-decode-inputs/lines_10-501-386_multiplelayers.mvt';
 
 // Geometry Array Results
-import decodedPolygonsGeometry from '@loaders.gl/mvt/test/results/decoded_mvt_polygons_array.json';
+import decodedPolygonsGeometry from '@loaders.gl/mvt/test/data/mvt-decode-results/decoded_mvt_polygons_array.json';
 
 // GeoJSON Results
-import decodedPointsGeoJSON from '@loaders.gl/mvt/test/results/decoded_mvt_points.json';
-import decodedLinesGeoJSON from '@loaders.gl/mvt/test/results/decoded_mvt_lines.json';
-import decodedPolygonsGeoJSON from '@loaders.gl/mvt/test/results/decoded_mvt_polygons.json';
+import decodedPointsGeoJSON from '@loaders.gl/mvt/test/data/mvt-decode-results/decoded_mvt_points.json';
+import decodedLinesGeoJSON from '@loaders.gl/mvt/test/data/mvt-decode-results/decoded_mvt_lines.json';
+import decodedPolygonsGeoJSON from '@loaders.gl/mvt/test/data/mvt-decode-results/decoded_mvt_polygons.json';
 
 setLoaderOptions({
   mvt: {

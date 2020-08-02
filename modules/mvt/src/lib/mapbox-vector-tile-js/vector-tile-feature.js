@@ -1,4 +1,4 @@
-// This code is forked from https://github.com/mapbox/vector-tile-js under BSD 3-clause license.
+// Forked from https://github.com/mapbox/vector-tile-js under BSD 3-clause license.
 /* eslint-disable */
 import Point from '@mapbox/point-geometry';
 
