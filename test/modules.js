@@ -6,14 +6,17 @@ const {_addAliases} = require('@loaders.gl/loader-utils');
 const ALIASES = require('./aliases');
 _addAliases(ALIASES);
 
-const TEST_CORE = true;
-const TEST_IMAGES = true;
-const TEST_MESHES = true;
-const TEST_SCENEGRAPHS = true;
-const TEST_TILES = true;
-const TEST_GEOSPATIAL = true;
-const TEST_TABLES = true;
-const TEST_ARCHIVES = true;
+// Making it easy to control which test cases are being run
+const ENABLED = true;
+
+const TEST_CORE = ENABLED;
+const TEST_IMAGES = ENABLED;
+const TEST_MESHES = ENABLED;
+const TEST_SCENEGRAPHS = ENABLED;
+const TEST_TILES = ENABLED;
+const TEST_GEOSPATIAL = ENABLED;
+const TEST_TABLES = ENABLED;
+const TEST_ARCHIVES = ENABLED;
 
 // Install polyfills (primarily for Node)
 require('@loaders.gl/polyfills');
@@ -68,6 +71,7 @@ if (TEST_GEOSPATIAL) {
 
 // Table Formats
 if (TEST_TABLES) {
+  require('@loaders.gl/type-analyzer/test');
   require('@loaders.gl/tables/test');
   require('@loaders.gl/arrow/test');
   require('@loaders.gl/csv/test');

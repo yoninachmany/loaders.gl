@@ -62,6 +62,8 @@
       "@loaders.gl/shapefile/test": ["modules/shapefile/test"],
       "@loaders.gl/tables/*": ["modules/tables/src/*"],
       "@loaders.gl/tables/test": ["modules/tables/test"],
+      "@loaders.gl/type-analyzer/*": ["modules/type-analyzer/src/*"],
+      "@loaders.gl/type-analyzer/test": ["modules/type-analyzer/test"],
       "@loaders.gl/tiles/*": ["modules/tiles/src/*"],
       "@loaders.gl/tiles/test": ["modules/tiles/test"],
       "@loaders.gl/terrain/*": ["modules/terrain/src/*"],
