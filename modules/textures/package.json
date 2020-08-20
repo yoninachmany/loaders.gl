@@ -1,7 +1,7 @@
 {
-  "name": "@loaders.gl/basis",
+  "name": "@loaders.gl/textures",
   "version": "2.3.0-alpha.10",
-  "description": "Framework-independent loader for the basis universal format",
+  "description": "Framework-independent loaders for compressed textures including the basis universal format",
   "license": "MIT",
   "publishConfig": {
     "access": "public"

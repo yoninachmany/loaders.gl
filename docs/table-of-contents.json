@@ -57,8 +57,6 @@
         {"entry": "modules/3d-tiles/docs/api-reference/tiles-3d-loader"},
         {"entry": "modules/3d-tiles/docs/api-reference/cesium-ion-loader"},
         {"entry": "modules/arrow/docs/api-reference/arrow-loader"},
-        {"entry": "modules/basis/docs/api-reference/basis-loader"},
-        {"entry": "modules/basis/docs/api-reference/compressed-texture-loader"},
         {"entry": "modules/csv/docs/api-reference/csv-loader"},
         {"entry": "modules/draco/docs/api-reference/draco-loader"},
         {"entry": "modules/draco/docs/api-reference/draco-writer"},
@@ -78,6 +76,9 @@
         {"entry": "modules/ply/docs/api-reference/ply-loader"},
         {"entry": "modules/terrain/docs/api-reference/quantized-mesh-loader"},
         {"entry": "modules/terrain/docs/api-reference/terrain-loader"},
+        {"entry": "modules/textures/docs/api-reference/basis-loader"},
+        {"entry": "modules/textures/docs/api-reference/compressed-texture-loader"},
+        {"entry": "modules/textures/docs/api-reference/compressed-texture-writer"},
         {"entry": "modules/video/docs/api-reference/video-loader"},
         {"entry": "modules/wkt/docs/api-reference/wkb-loader"},
         {"entry": "modules/wkt/docs/api-reference/wkt-loader"},
@@ -122,12 +123,6 @@
           "title": "@loaders.gl/arrow",
           "entries": [
             {"entry": "modules/arrow/docs"}
-          ]
-        },
-        {
-          "title": "@loaders.gl/basis",
-          "entries": [
-            {"entry": "modules/basis/docs"}
           ]
         },
         {
@@ -239,6 +234,12 @@
             {"entry": "modules/tiles/docs"},
             {"entry": "modules/tiles/docs/api-reference/tileset-3d"},
             {"entry": "modules/tiles/docs/api-reference/tile-3d"}
+          ]
+        },
+        {
+          "title": "@loaders.gl/textures",
+          "entries": [
+            {"entry": "modules/textures/docs"}
           ]
         },
         {
