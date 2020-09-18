@@ -40,6 +40,7 @@
     "pre-push": "ocular-test fast"
   },
   "devDependencies": {
+    "@apache-arrow/es2015-esm": "^0.17.0",
     "@luma.gl/core": "^8.2.0",
     "@luma.gl/debug": "^8.2.0",
     "@luma.gl/test-utils": "^8.2.0",

@@ -2,6 +2,22 @@
 # yarn lockfile v1
 
 
+"@apache-arrow/es2015-esm@^0.17.0":
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/@apache-arrow/es2015-esm/-/es2015-esm-0.17.0.tgz#daa4d968ff5c538dffe77a6ca4ecc09e6f4aef9d"
+  integrity sha512-CcKx4/zz4Mg2GZSzFx+1q9EcKKskuquLFZvvKuy5W76dtWzf5PSHwicFPWZwL4KW2OUE3J4TgjGWrsT9Qh3gYg==
+  dependencies:
+    "@types/flatbuffers" "^1.9.1"
+    "@types/node" "^12.0.4"
+    "@types/text-encoding-utf-8" "^1.0.1"
+    command-line-args "5.0.2"
+    command-line-usage "5.0.5"
+    flatbuffers "1.11.0"
+    json-bignum "^0.0.3"
+    pad-left "^2.1.0"
+    text-encoding-utf-8 "^1.0.2"
+    tslib "^1.9.3"
+
 "@babel/cli@^7.8.7":
   version "7.10.5"
   resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.10.5.tgz#57df2987c8cf89d0fc7d4b157ec59d7619f1b77a"
