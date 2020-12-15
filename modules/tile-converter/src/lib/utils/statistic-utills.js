@@ -29,7 +29,15 @@ export function timeConverter(time) {
     result += `${milliseconds}ms`;
   }
 
-  return result;
+  const date = new Date();
+
+  date.setHours(hours);
+  date.setMinutes(minutes);
+  date.setSeconds(seconds);
+  date.setMilliseconds(milliseconds);
+  return date.toLocaleTimeString('en-US');
+
+  // return `${hours || '00'}:${minutes || '00'}:${seconds || '00'}:${milliseconds || '00'}`
 }
 
 export async function calculateFilesSize(params) {
